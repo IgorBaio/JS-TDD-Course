@@ -4,7 +4,8 @@
   "description": "Minha biblioteca de JS com TDD na prática.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha tests/**/*.spec.js",
+    "test:tdd": "./node_modules/.bin/mocha tests/**/*.spec.js --watch"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,12 @@
   "bugs": {
     "url": "https://github.com/IgorBaio/JS-TDD-Course/issues"
   },
-  "homepage": "https://github.com/IgorBaio/JS-TDD-Course#readme"
+  "homepage": "https://github.com/IgorBaio/JS-TDD-Course#readme",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "eslint": "^7.29.0",
+    "eslint-plugin-react": "^7.24.0",
+    "husky": "^6.0.0",
+    "mocha": "^9.0.1"
+  }
 }
