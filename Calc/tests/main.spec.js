@@ -1,5 +1,6 @@
 import { expect } from "chai";
 import { sum, sub, mult, div } from "../src";
+
 describe("Calc", () => {
   //smoke tests
   describe("Smoke Tests", () => {
